@@ -1,6 +1,8 @@
-CC ?= gcc
-QEMU_USER ?= qemu-x86_64
-CFLAGS ?=
+# CC ?= gcc
+CC ?= /usr/bin/riscv64-linux-gnu-gcc
+# QEMU_USER ?= qemu-x86_64
+QEMU_USER ?= /usr/bin/qemu-riscv64
+CFLAGS ?= -static
 INPUT_ARGS ?= 2 3
 
 BUILD_DIR := build
