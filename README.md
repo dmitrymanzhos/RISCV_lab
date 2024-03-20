@@ -9,19 +9,20 @@
 
 ## Подробнее
 
-для запуска под Linux измением в Makefile 'COMPILLER=gcc' и запускаем:
-'''
+для запуска под Linux измением в Makefile 
+'COMPILLER=gcc' и запускаем:
+~~~
 make run
-'''
+~~~
 
 В docker клонируем репозиторий и запускаем сначала
-'''
+~~~
 make run-qemu
-'''
+~~~
 (gnu toolchain)
 
 Затем
-'''
+~~~
 COMPILLER=/opt/sc-dt/llvm/bin/clang QEMU_USER=/opt/sc-dt/tools/bin/qemu-riscv64 CFLAGS=-static make run-qemu
-'''
+~~~
 (llvm toolchain)
