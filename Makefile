@@ -1,7 +1,10 @@
 # CC ?= gcc
-CC ?= /usr/bin/riscv64-linux-gnu-gcc
+# CC ?= /usr/bin/riscv64-linux-gnu-gcc
+CC ?= /opt/sc-dt/riscv-gcc/bin/riscv64-unknown-linux-gnu-gcc
 # QEMU_USER ?= qemu-x86_64
-QEMU_USER ?= /usr/bin/qemu-riscv64
+# QEMU_USER ?= /usr/bin/qemu-riscv64
+QEMU_USER ?= /opt/sc-dt/tools/bin/qemu-riscv64
+
 CFLAGS ?= -static
 INPUT_ARGS ?= 2 3
 
